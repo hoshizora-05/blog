@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja-jp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>杜と星の日記帳</title>
+    <link rel="stylesheet" href="../css/ress.css">
+    <link rel="stylesheet" href="../css/gh-repo-vscode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=M+PLUS+2&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="grid">
+        <header>
+            <nav>
+                <div class="lg">
+                    <a class="logo" href="#">杜と星の日記帳</a>
+                </div>
+                <div class="global-nav">
+                    <ul class="global-nav-ul">
+                        <li class="home">
+                            <a href="/index.html">ホーム</a>
+                        </li>
+        
+                        <li class="memo">
+                            <a href="/memo.html">備忘録</a>
+                        </li>
+        
+                        <li class="blog">
+                            <a href="#">ブログ</a>
+                        </li>
+        
+                        <li class="contact">
+                            <a href="#">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <main id="content">
+            <div class="bg">
+                <div class="base">
+                    <img src="../images/vscodeandgithub.jpg">
+                    <h2>VScodeでGitHubリポジトリを連携する方法</h2>
+                    <p>新規作成の手順と、作成したリポジトリをVScodeと紐づける方法を写真付きで解説します。</p>
+                    <br>
+                    <h3>まずはGitHubでリポジトリを新規作成</h3>
+                    <img class="shinki" src="/素材/sinki.png">
+                    <p>GitHubにログインすると、色々出てくると思います。左ペインのNewというところから、新規でリポジトリを作成します。<br>すると、上記写真のような画面が出てくるので、以下の項目に沿って進めてください。</p>
+                    <br>
+                    <ul class="tejun">
+                        <li>Repository name：リポジトリの名前です。なんでもOK</li>
+                        <li>Description：リポジトリの説明です。スルーでOK</li>
+                        <li>Public or Private：リポジトリの公開範囲を設定します。今回はPublicで進めます。</li>
+                        <li>Add a README file：READMEファイルを一緒に作るかどうかの設定です。</li>
+                        <li>Add gitignore：使ったことがないので分かりませんが、恐らく言語ファイルのテンプレートを使用するか否かの設定だと思われます。</li>
+                        <li>Choose a license：リポジトリの著作物のライセンスを設定します。</li>
+                    </ul>
+                    <br>
+                    <p>見直して良ければ、右下のCreate repositoryをクリックしてください。</p>
+                    <br>
+                    <h3>VScodeでいろいろする</h3>
+                    <img src="/素材/reposhokika.png">
+                    <p>まず、任意の場所でフォルダを作成してください。その後、作ったフォルダをcodeで開き、左ペインの上から3つめのマークを押すとこのような画面になると思います。<br>この状態で、左上のリポジトリを初期化するをクリックしてください。</p>
+                    <p>クリックしたら、状態が変化すると思います。この状態で、任意のファイルを新規作成します。</p>
+                    <img src="/素材/test.txt.png">
+                    <p>その後、先ほどの場所に戻ると、このように変化していると思います。そうしたら、ファイル名横の＋ボタンをクリックし、ファイルをステージングしてください、</p>
+                    <p>ステージしている状態で、コミットの上にある空欄に任意の文字列を入力し、コミットをクリックしてください。</p>
+                    <img src="/素材/repocomp.png">
+                    <p>ここでGitHubに戻り、この画面になっていると思うので、青色の部分の、HTTPSが選択された状態でリンクをコピーしてください。</p>
+                    <img src="/素材/vsterminal.png">
+                    <p>codeに戻ってきたら、上側のターミナルから、新しいターミナルをクリックすると、写真のような画面になると思います。<br>その画面で以下のコマンドを叩いてください。</p>
+                    <pre>
+                        <code class="languages-powershell">
+                            git remote add origin "先ほどコピーしたリンク"
+                        </code>
+                    </pre>
+                    <p>これで連携が完了しました。試しに、ローカルでコミットしたファイルをプッシュしてみましょう。プッシュに成功していれば、リポジトリのページを更新するとファイルが出現すると思います。</p>
+                    <h3>まとめ</h3>
+                    <p>分かりづらい解説かもしれませんが、誰かの役に立てれば幸いです。</p>
+                </div>
+            </div>
+        </main>
+
+        <footer id="bottom">
+            <div class="ft-bottom">&copy; 2024　杜と星の日記帳</div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
