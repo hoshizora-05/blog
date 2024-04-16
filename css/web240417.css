@@ -121,7 +121,28 @@ h3 {
     z-index: 900;
 }
 
+.base img {
+    max-width: 80%;
+    height: auto;
+    margin-left: 13%;
+    margin-top: 5%;
+}
 
+blockquote.inyou p {
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.inyou p {
+    font-style: oblique;
+    font-family: 'Kosugi', sans-serif;
+}
+
+.ft-inyou {
+    font-size: 13px;
+    text-align: center;
+}
 
 /*ドロップダウン*/
 

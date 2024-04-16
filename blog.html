@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>杜と星の日記帳</title>
-    <link rel="stylesheet" href="css/ress.css">
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="/css/ress.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/card.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=M+PLUS+2&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
@@ -24,10 +25,6 @@
                             <a href="/index.html">ホーム</a>
                         </li>
         
-                        <li class="memo">
-                            <a href="/memo.html">備忘録</a>
-                        </li>
-        
                         <li class="blog">
                             <a href="/blog.html">ブログ</a>
                         </li>
@@ -44,11 +41,31 @@
             <div class="bg">
                 <div class="base">
                     <h3>ブログ</h3>
-                    <p>備忘録以外の記事です。というか分ける必要はあったのかな。恐らく近々名称変更すると思う。</p>
-                    <br>
+                    <p>投稿頻度が遅いブログです。</p>
                     <h3>PC・周辺機器</h3>
-                    <br>
-                    <h3>雑貨・文具など</h3>
+                    <h3>技術系</h3>
+                    <div class="card-list">
+                        <article class="card">
+                            <div class="card-content">
+                                <img src="images/vscodeandgithub.jpg">
+                                <h3><a class="card-text" href="/blogs/web240417.html">自宅鯖でブログを公開してみた話</a></h3>
+                                <p>いろいろな苦労を乗り越えた話をまとめたもの</p>
+                                <hr class="kugiri">
+                                <p class="day">執筆日：2024年4月17日</p>
+                            </div>
+                        </article>
+    
+                        <article class="card">
+                            <div class="card-content">
+                                <img src="images/vscodeandgithub.jpg">
+                                <h3><a class="card-text" href="/memos/gh-repo-vscode.html">GitHubのリポジトリを連携する方法</a></h3>
+                                <p>初学者、初心者向け　VScodeでのリポジトリ連携方法です。</p>
+                                <hr class="kugiri">
+                                <p class="day">執筆日：2024年4月12日</p>
+                            </div>
+                        </article>
+                    </div>
+                    <h3>雑貨・文具系</h3>
                 </div>
             </div>
         </main>
