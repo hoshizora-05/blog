@@ -121,11 +121,18 @@ h3 {
     z-index: 900;
 }
 
-.base img {
+.content_box {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content_box img {
     max-width: 80%;
     height: auto;
-    margin-left: 10%;
-    margin-top: 5%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
 }
 
 .tejun {

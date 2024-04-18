@@ -117,16 +117,21 @@ h3 {
 
 .base {
     margin-left: 25%;
+    min-width: 320px;
     height: 100%;
     max-width: 50%;
     background-color: whitesmoke;
     z-index: 900;
 }
 
+.content_box {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 7px;
     gap: 10px;
 }
 

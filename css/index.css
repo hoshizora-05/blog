@@ -117,11 +117,15 @@ h3 {
     margin-left: 25%;
     height: 100%;
     max-width: 50%;
+    min-width: 320px;
     background-color: whitesmoke;
     z-index: 900;
 }
 
-
+.content_box {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 /*ドロップダウン*/
 
